@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EduChain Verify</title>
+  <link rel="icon" href="assets/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,520;9..144,640&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=3">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.svg" alt="" width="42" height="42">
+      <span><strong>EduChain Verify</strong><small>Student-owned credentials</small></span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="how.html">How it works</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="malaysia.html">Malaysia</a>
+      <a class="btn btn-gold" href="portal.html#login">Open portal</a>
+    </nav>
+  </header>
+  <main class="wrap">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Education · Digital ownership</p>
+        <h1>Credentials students own. Employers can check in seconds.</h1>
+        <p class="lede">EduChain Verify gives universities a way to issue a credential once, students a wallet they control, and employers a check that does not wait on a phone call.</p>
+        <div class="btn-row">
+          <a class="btn btn-navy" href="portal.html#register">Create a digital identity</a>
+          <a class="btn btn-ghost" href="how.html">See the full path</a>
+        </div>
+        <form class="verify-bar" data-verify>
+          <div>
+            <label for="quick-id">Check a credential</label>
+            <input id="quick-id" name="id" placeholder="EDU-2026-00125" required>
+          </div>
+          <button class="btn btn-gold" type="submit">Verify</button>
+        </form>
+      </div>
+      <article class="credential-card">
+        <div class="card-top">
+          <p class="eyebrow">Sample record</p>
+          <span class="pill verified">Verified</span>
+        </div>
+        <img class="uni-logo" src="assets/utar-logo.jpg" alt="Universiti Tunku Abdul Rahman" width="107" height="54">
+        <h2>Bachelor of Business Administration</h2>
+        <p>Muhammad Ahmad<br>Universiti Tunku Abdul Rahman</p>
+        <div class="split">
+          <p class="meta">ID EDU-2026-00125<br>Token #EDU10245<br>Tx 0x82FA91C4E17B8D30</p>
+          <div class="seal">Owned<br>by<br>student</div>
+        </div>
+      </article>
+    </section>
+    <section class="band" aria-label="Who it is for">
+      <article class="user-card"><span>01</span><h3>Student</h3><p>Create a digital identity, keep verified credentials, and share only the record an employer needs.</p></article>
+      <article class="user-card"><span>02</span><h3>University</h3><p>Review a submission, read the AI check, and let a smart contract record an authorised issuance.</p></article>
+      <article class="user-card"><span>03</span><h3>Employer</h3><p>Enter an ID or open a shared link and see whether the credential is verified or revoked.</p></article>
+    </section>
+    <section class="section grid-2">
+      <div>
+        <p class="eyebrow">The problem</p>
+        <h2>Paper and loose PDF files are slow to trust.</h2>
+        <ul class="problem-list">
+          <li><b>01</b><span>Certificates are easy to alter once they leave the campus.</span></li>
+          <li><b>02</b><span>Universities answer the same verification request again and again.</span></li>
+          <li><b>03</b><span>Students resend the same documents to every recruiter.</span></li>
+          <li><b>04</b><span>Employers have no single, fast authenticity check.</span></li>
+        </ul>
+      </div>
+      <div>
+        <p class="eyebrow">Five technologies, one workflow</p>
+        <h2>Each layer has a job.</h2>
+        <div class="stack">
+          <article class="tech-card"><span>Identity</span><h3>Digital identity</h3><p>The platform knows who is acting before anyone can issue or share a record.</p></article>
+          <article class="tech-card"><span>AI</span><h3>Fraud check</h3><p>Document review flags tampering and explains the score. A person still decides.</p></article>
+          <article class="tech-card"><span>Contract</span><h3>Smart contract</h3><p>Authorised rules record issuance and revocation instead of a one-off email.</p></article>
+          <article class="tech-card"><span>Ledger</span><h3>Blockchain record</h3><p>A tamper-evident proof and status event are stored. The personal file is not put on a public chain.</p></article>
+          <article class="tech-card"><span>Wallet</span><h3>Digital ownership</h3><p>The student holds the credential token and chooses when to share it.</p></article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>EduChain Verify is a working course prototype for UCC2443 Blockchain and Digital Ownership. Muhammad Ahmad · 110060461 · Examiner Janice Nang.</p>
+    <p>The demonstration ledger stays in this browser. Full personal documents are not written to a public chain.</p>
+  </footer>
+  <script src="js/site.js"></script>
+</body>
+</html>
